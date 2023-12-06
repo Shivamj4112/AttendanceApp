@@ -10,10 +10,8 @@
 <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/b4bbe1f0-8562-498e-91b4-ad71a8a21424" alt="alt text" width="300" height="600"/>
 <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/2b8728e4-d2f0-464e-9cc4-8ada753c160f" alt="alt text" width="300" height="600"/>
 <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/c6b6959d-a9a8-403e-b31f-b36f4f4d698d" alt="alt text" width="300" height="600"/>
-
 <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/69d9c04f-1c4f-4c82-b4a9-af4d9e1ddc57" alt="alt text" width="300" height="600"/>
 <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/280386dd-7bf5-458c-a083-6301d85ba83b" alt="alt text" width="300" height="600"/>
-<img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/66f24b96-dfe8-4a3b-afb9-46e0ecff8ace" alt="alt text" width="300" height="600"/>
 <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/cd0e01a9-9b71-41d8-b0c3-745ef5c956cc" alt="alt text" width="300" height="600"/>
 <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/670d9888-0ecc-4f97-802e-4269d9ac3e26" alt="alt text" width="300" height="600"/>
 <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/7a0acd09-5891-408e-a20f-1efb87a514fc" alt="alt text" width="300" height="600"/>
