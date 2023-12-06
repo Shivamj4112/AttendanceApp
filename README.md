@@ -2,9 +2,17 @@
   <figure>
   <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/551bf082-d202-4a78-925c-096f10d403f2" alt="alt text" width="200" height="400"/>
   <figcaption>Signup Activity</figcaption>
-</figure>
-<img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/e46e9f82-5ff8-4e84-936a-4181f680eb5b" alt="alt text" width="200" height="400"/>
-<img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/b45fee68-4de1-462a-9bd7-b8fff53fc380" alt="alt text" width="200" height="400"/>
+  </figure>
+  <figure>
+  <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/e46e9f82-5ff8-4e84-936a-4181f680eb5b" alt="alt text" width="200" height="400"/>
+  <figcaption>Signup Activity</figcaption>
+  </figure>
+  <figure>
+  <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/b45fee68-4de1-462a-9bd7-b8fff53fc380" alt="alt text" width="200" height="400"/>
+  <figcaption>Signup Activity</figcaption>
+  </figure>
+
+
 <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/cad07f54-cbb9-44ae-8711-a16d60971f19" alt="alt text" width="200" height="400"/>
 <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/1cc17de1-8a3f-49c7-8d34-8e6caef30660" alt="alt text" width="200" height="400"/>
 <img src="https://github.com/Shivamj4112/AttendanceApp/assets/101393149/41f38cb9-e447-4e75-9414-ed44dcf97a08" alt="alt text" width="200" height="400"/>
