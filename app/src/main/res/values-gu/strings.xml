@@ -20,7 +20,7 @@
     <string name="message">સંદેશ</string>
     <string name="are_you_sure_you_want_to_delete">"શું તમે ખરેખર કાઢી નાખવા માંગો છો?"</string>
     <string name="delete">કાઢી નાખો</string>
-    <string name="data_already_exists_for_this_date">આ તારીખ માટે ડેટા પહેલેથી જ અસ્તિત્વમાં છે.</string>
+    <string name="data_already_exists_for_this_date">તારીખ પહેલેથી ઉપયોગ મા ચે.</string>
     <string name="cancel">રદ કરો</string>
     <string name="selectYear">વર્ષ પસંદ કરો</string>
     <string name="ok">બરાબર</string>
@@ -33,8 +33,8 @@
     <string name="pending">બાકી છે</string>
     <string name="logout">લૉગ આઉટ</string>
     <string name="select_language">ભાષા પસંદ કરો</string>
-    <string name="user_name">User Name</string>
-    <string name="user_number">User Number</string>
+    <string name="user_name">વપરાશકર્તા નામ</string>
+    <string name="user_number">વપરાશકર્તા નંબર</string>
     <string name="enter_name">નામ દાખલ કરો</string>
     <string name="please_enter_a_valid_phone_number">કૃપા કરીને સાચો ફોન નંબર નાખો.</string>
     <string name="otp_send">Otp મોકલો.</string>
@@ -43,15 +43,15 @@
     <string name="already_have_account">પહેલેથી એકાઉન્ટ છે?</string>
     <string name="create_account">ખાતું બનાવો ?</string>
     <string name="enter_category">શ્રેણી દાખલ કરો</string>
-    <string name="save">Save</string>
+    <string name="save">સાચવો</string>
     <string name="days">%1$s દિવસ</string>
     <string name="total_present_in">%1$s માં કુલ હાજર</string>
     <string name="pdf_downloaded_successfully">ડાઉનલોડ પૂર્ણ</string>
     <string name="no_account_found">કોઈ ખાતું મળ્યું નથી</string>
     <string name="this_phone_number_is_used">આ ફોન નંબર પહેલેથી જ ઉપયોગમાં લેવાયો છે</string>
-    <string name="data_not_added">Data Not Added</string>
-    <string name="cash_withdraw">Cash Withdraw</string>
-    <string name="sign">Sign</string>
-    <string name="enter_amount">Enter Amount</string>
-    <string name="amount">Amount</string>
+    <string name="data_not_added">ડેટા ઉમેર્યો નથી</string>
+    <string name="cash_withdraw">રોકડ ઉપાડ</string>
+    <string name="sign">સાઇન</string>
+    <string name="enter_amount">રકમ દાખલ કરો</string>
+    <string name="amount">રકમ</string>
 </resources>
