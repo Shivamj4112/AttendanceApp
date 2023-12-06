@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Category" >
+        <item>@string/status_currentPresent</item>
+        <item>@string/status_currentDay</item>
+    </string-array>
+
+
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange">#FF9E80</color>
+    <color name="default_text">#FFFFFFFF</color>
+    <color name="night_mode">#FF424242</color>
+    <color name="light_red">#CD5C5C</color>
+    <color name="light_blue">#18ACFF</color>
+    <color name="light_pink">#F009E7</color>
+    <color name="grey">#FFFFFFFF</color>
+    <color name="green">#64DD17</color>
+    <color name="background_orange">#F3E9E6</color>
+<!--    <color name="dark_green">#02B64D</color>-->
+    <color name="dark_green">#02BF51</color>
+</resources>

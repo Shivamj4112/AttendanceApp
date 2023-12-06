@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.OtpVerificationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/icon_otp_verification"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verify_otp"
+                android:textColor="@color/default_text"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold" />
+
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinview"
+                app:itemCount="6"
+                app:itemWidth="@dimen/_40sdp"
+                app:itemHeight="@dimen/_40sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:itemBackground="@color/transparent"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:cursorVisible="true"
+                app:hideLineWhenFilled="false"
+                android:textColor="@color/default_text"
+                app:itemRadius="10dp"
+                app:lineColor="@color/orange"
+                style="@style/PinWidget.PinView"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_error_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="@string/message_status"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/grey"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_Login"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:letterSpacing="0.4"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:backgroundTint="@color/grey" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/translucentOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:lottie_rawRes="@raw/animation"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/language"
+        android:enabled="true"
+        android:icon="@drawable/icon_language"
+        android:title="@string/select_language" />
+    <item
+        android:id="@+id/logout"
+        android:enabled="true"
+        android:icon="@drawable/icon_logout"
+        android:title="@string/logout" />
+
+</menu>

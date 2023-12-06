@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "587875545793",
+    "firebase_url": "https://attendance-d4025-default-rtdb.firebaseio.com",
+    "project_id": "attendance-d4025",
+    "storage_bucket": "attendance-d4025.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587875545793:android:917b17e6539dce4f68da40",
+        "android_client_info": {
+          "package_name": "com.pankajgaming.attendanceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRunn7LnyoUPPMY6HiJd0wIYAOjRb4H00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
