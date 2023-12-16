@@ -8,7 +8,7 @@ import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import com.google.android.material.card.MaterialCardView
 import com.google.firebase.auth.FirebaseAuth
-import com.pankajgaming.attendanceapp.LocaleHelper
+import com.pankajgaming.attendanceapp.util.LocaleHelper
 import com.pankajgaming.attendanceapp.R
 import com.pankajgaming.attendanceapp.databinding.ActivityLanguageSelectionBinding
 

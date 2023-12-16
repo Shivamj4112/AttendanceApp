@@ -54,6 +54,7 @@
     <string name="sign">साइन</string>
     <string name="enter_amount">राशि दर्ज करें</string>
     <string name="amount">राशि</string>
+    <string name="today_attendance_is_completed">आजची उपस्थिती नोंदवली आहे</string>
     <!--    <string name="total_present_in">Total Present in</string>-->
 </resources>
 

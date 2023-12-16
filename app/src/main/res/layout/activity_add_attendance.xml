@@ -125,7 +125,7 @@
                 <AutoCompleteTextView
                     android:id="@+id/btnCategory"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_40sdp"
+                    android:layout_height="@dimen/_45sdp"
                     android:hint="@string/category"
                     android:inputType="none"
                     android:background="@color/night_mode"
@@ -218,6 +218,7 @@
         android:id="@+id/translucentOverlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="invisible"
         android:background="#80000000"/>
 
     <com.airbnb.lottie.LottieAnimationView
@@ -227,6 +228,7 @@
         app:lottie_rawRes="@raw/animation"
         android:layout_gravity="center"
         app:lottie_autoPlay="true"
+        android:visibility="invisible"
         app:lottie_loop="true"/>
 
 </FrameLayout>

@@ -54,5 +54,6 @@
     <string name="sign">Sign</string>
     <string name="enter_amount">Enter Amount</string>
     <string name="amount">Amount</string>
+    <string name="today_attendance_is_completed">Todays Attendance is Completed</string>
     <!--    <string name="total_present_in">Total Present in</string>-->
 </resources>

@@ -1,18 +1,15 @@
-package com.pankajgaming.attendanceapp
+package com.pankajgaming.attendanceapp.Adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.os.Handler
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.pankajgaming.attendanceapp.Activity.AllAttendanceActivity
-import com.pankajgaming.attendanceapp.Activity.MonthAttendanceActivity
-import com.pankajgaming.attendanceapp.Manager.NetworkManager
+import com.pankajgaming.attendanceapp.util.LocaleHelper
 import com.pankajgaming.attendanceapp.ModelClass.ModelClass
+import com.pankajgaming.attendanceapp.R
 import com.pankajgaming.attendanceapp.databinding.ItemLayoutBinding
 
 class NotesAdapter() : RecyclerView.Adapter<NotesAdapter.DataHolder>() {

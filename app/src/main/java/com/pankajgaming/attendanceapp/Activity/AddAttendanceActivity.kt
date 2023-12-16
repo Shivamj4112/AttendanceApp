@@ -3,15 +3,12 @@ package com.pankajgaming.attendanceapp.Activity
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.os.Handler
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.widget.EditText
-import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -29,9 +26,9 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.pankajgaming.attendanceapp.ImageAdapter
+import com.pankajgaming.attendanceapp.Adapter.ImageAdapter
 import com.pankajgaming.attendanceapp.DataClass.ImageItem
-import com.pankajgaming.attendanceapp.LocaleHelper
+import com.pankajgaming.attendanceapp.util.LocaleHelper
 import com.pankajgaming.attendanceapp.Manager.NetworkManager
 import com.pankajgaming.attendanceapp.ModelClass.ModelClass
 import com.pankajgaming.attendanceapp.R
@@ -359,8 +356,8 @@ class AddAttendanceActivity : AppCompatActivity() {
                 val oldDate = intent.extras?.getString("date")!!
                 val oldMessage = intent.extras?.getString("message")
                 val oldCategory = intent.extras?.getString("category")
-                val oldUserSign = intent.extras?.getString("userSign")!!
-                val oldUserName = intent.extras?.getString("userSignName")
+                var oldUserSign = intent.extras?.getString("userSign")!!
+                var oldUserName = intent.extras?.getString("userSignName")
                 val oldUserAmount = intent.extras?.getString("amount")!!
 
                 if (oldUserName!!.isEmpty() && oldUserSign.isEmpty()){
@@ -442,7 +439,7 @@ class AddAttendanceActivity : AppCompatActivity() {
                     } else if (TextUtils.isEmpty(amount)) {
                         binding.btnCategory.error = getString(R.string.enter_amount)
                     }else {
-                        updateDataChance(oldYear, newYear, oldMonth, selectedMonth, newDate, newMessage, newCategory, oldDate, amount)
+                        updateDataChance(oldYear, newYear, oldMonth, selectedMonth, newDate, newMessage, newCategory, oldDate, amount,oldUserSign,oldUserName)
                     }
                 }
             }
@@ -472,16 +469,26 @@ class AddAttendanceActivity : AppCompatActivity() {
         }
     }
 
-    private fun updateDataChance(oldYear: String, newYear: String, oldMonth: String, newMonth: String, newDate: String, newMessage: String, newCategory: String, oldDate: String,amount:String) {
+    private fun updateDataChance(oldYear: String, newYear: String, oldMonth: String, newMonth: String, newDate: String, newMessage: String, newCategory: String, oldDate: String, amount: String, signUrl: String, signName: String) {
         val databaseReference = FirebaseDatabase.getInstance().reference
         val mappedCategory = mapEnglishToSelectedLanguage(newCategory)
 
         val fromPath = "Users/$uid/Attendance/$oldYear/$oldMonth/$oldDate"
         val toPath = "Users/$uid/Attendance/$newYear/$newMonth/$newDate"
 
+        var oldUserName :String
+        var oldUserSign :String
 
+        if (selectedImageName != null && selectedImageUrl != null) {
+            oldUserName = selectedImageName!!
+            oldUserSign = selectedImageUrl!!
+        } else {
+            // If the user hasn't changed the sign, keep the existing values from the intent
+            oldUserName = signName
+            oldUserSign = signUrl
+        }
         // Update the database with the download URL and other data
-        val model = ModelClass(newDate, newMessage, mappedCategory, newYear, newMonth, selectedImageUrl,selectedImageName,amount)
+        val model = ModelClass(newDate, newMessage, mappedCategory, newYear, newMonth, oldUserSign,oldUserName,amount)
         databaseReference.child(toPath).setValue(model).addOnCompleteListener { taskId ->
             if (taskId.isSuccessful) {
                 Toast.makeText(
@@ -496,11 +503,7 @@ class AddAttendanceActivity : AppCompatActivity() {
                 finish()
             } else {
                 // Handle any failure in updating data
-                Toast.makeText(
-                    this@AddAttendanceActivity,
-                    getString(R.string.data_not_updated),
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(this@AddAttendanceActivity, getString(R.string.data_not_updated), Toast.LENGTH_SHORT).show()
             }
         }
     }

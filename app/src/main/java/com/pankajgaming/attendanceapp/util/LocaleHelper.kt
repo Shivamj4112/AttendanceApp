@@ -1,7 +1,6 @@
-package com.pankajgaming.attendanceapp
+package com.pankajgaming.attendanceapp.util
 
 import android.content.Context
-import android.content.SharedPreferences
 import android.content.res.Configuration
 import java.util.*
 

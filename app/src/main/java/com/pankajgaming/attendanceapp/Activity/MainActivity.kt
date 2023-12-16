@@ -3,10 +3,8 @@ package com.pankajgaming.attendanceapp.Activity
 
 import android.Manifest
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.ConnectivityManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,7 +12,6 @@ import android.os.Handler
 import android.util.Log
 import android.view.Gravity
 import android.view.View
-import android.view.animation.AnimationUtils
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -32,7 +29,7 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.pankajgaming.attendanceapp.databinding.ActivityMainBinding
 import com.pankajgaming.attendanceapp.DataClass.User
-import com.pankajgaming.attendanceapp.LocaleHelper
+import com.pankajgaming.attendanceapp.util.LocaleHelper
 import com.pankajgaming.attendanceapp.Manager.NetworkManager
 import com.pankajgaming.attendanceapp.R
 import java.text.SimpleDateFormat
@@ -303,13 +300,18 @@ class MainActivity : AppCompatActivity() {
                         if (date == formattedDate && mappedCategory == getString(R.string.status_currentDay)) {
                             binding.txtDay.text = getString(R.string.status_currentDay)
                             isTodayPresent = true
-                            binding.btnDay.isEnabled = false
+                            binding.btnDay.setOnClickListener {
+                                Toast.makeText(this@MainActivity, getString(R.string.today_attendance_is_completed),Toast.LENGTH_SHORT).show()
+                            }
                             break
                         }
                         else if(date == formattedDate && mappedCategory == getString(R.string.status_currentPresent)){
                             binding.txtDay.text = getString(R.string.status_currentPresent)
                             isTodayPresent = true
-                            binding.btnDay.isEnabled = false
+                            binding.btnDay.isEnabled = true
+                            binding.btnDay.setOnClickListener {
+                                Toast.makeText(this@MainActivity,getString(R.string.today_attendance_is_completed),Toast.LENGTH_SHORT).show()
+                            }
                             break
                         }
                     }
@@ -390,7 +392,7 @@ class MainActivity : AppCompatActivity() {
                             }
                         }
                     }
-                    binding.dayPresentYear.text = getString(R.string.days, count)
+                    binding.dayPresentYear.text =  getString(R.string.days, count)
                 }
 
                 override fun onCancelled(error: DatabaseError) {

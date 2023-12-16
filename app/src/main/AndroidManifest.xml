@@ -77,7 +77,7 @@
             android:exported="false"
             android:screenOrientation="portrait"/>
 
-        <receiver android:name=".NotificationReceiver" />
+        <receiver android:name=".util.NotificationReceiver" />
 
     </application>
 

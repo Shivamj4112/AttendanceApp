@@ -30,7 +30,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.pankajgaming.attendanceapp.NotesAdapter
+import com.pankajgaming.attendanceapp.Adapter.NotesAdapter
 import com.pankajgaming.attendanceapp.ModelClass.ModelClass
 import com.pankajgaming.attendanceapp.R
 import com.pankajgaming.attendanceapp.databinding.ActivityMonthAttendanceBinding

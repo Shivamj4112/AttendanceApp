@@ -54,4 +54,5 @@
     <string name="sign">સાઇન</string>
     <string name="enter_amount">રકમ દાખલ કરો</string>
     <string name="amount">રકમ</string>
+    <string name="today_attendance_is_completed">આજની હાજરી નોંધાયેલ છે</string>
 </resources>
